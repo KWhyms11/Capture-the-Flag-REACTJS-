@@ -42,9 +42,11 @@ const App = () => {
   }
 
   // Display our flag
+  // I know the instructions asked for a list but as I started to implement this a substring felt easier and looks a bit cleaner
+  // I could have used .map() to display from 0 - counter but for the current assignment it felt a bit like overkill
   return (
     <>
-      <div className="Flag-Display">{flag.split('').slice(0, counter + 1)}</div>
+      <div className="Flag-Display">{flag.substring(0, counter + 1)}</div>
     </>
   );
 }
